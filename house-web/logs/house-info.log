@@ -1,0 +1,395 @@
+2019-12-05 15:22:02.933 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:22:02.946 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:22:02.948 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:22:03.125 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:22:03.230 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:22:03.248 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6e4566f1, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@4b6e2263, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@344f4dea, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1b7c473a, org.springframework.test.context.transaction.TransactionalTestExecutionListener@5e4bd84a, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@648c94da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53de625d, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@535779e4, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@53fd0d10, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@6c0d9d86]
+2019-12-05 15:22:04.298 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 429148 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:22:04.299 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:22:06.134 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:22:06.152 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:06.163 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:22:06.163 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:22:06.517 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:22:06.518 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 2152 ms
+2019-12-05 15:22:07.094 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:22:07.333 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:22:08.021 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:22:09.198 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:09.207 [main] ERROR [org.apache.catalina.util.LifecycleBase:175] maincid - Failed to start component [Connector[HTTP/1.1-8061]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) ~[junit-rt.jar:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_101]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 39 more
+2019-12-05 15:22:09.212 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Pausing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:09.213 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Stopping service [Tomcat]
+2019-12-05 15:22:09.225 [main] INFO  [org.apache.catalina.util.LifecycleBase:173] maincid - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-12-05 15:22:09.226 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Stopping ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:09.227 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Destroying ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:09.232 [main] INFO  [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:142] maincid - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-05 15:22:09.235 [main] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42] maincid - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8061 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8061, or configure this application to listen on another port.
+
+2019-12-05 15:22:09.239 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] maincid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:22:09.240 [main] INFO  [com.zaxxer.hikari.HikariDataSource:350] maincid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:22:09.247 [main] INFO  [com.zaxxer.hikari.HikariDataSource:352] maincid - MYHikariCP - Shutdown completed.
+2019-12-05 15:22:09.337 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 429148 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:22:09.337 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:22:09.764 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:22:09.765 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:09.765 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:22:09.765 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:22:09.787 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:22:09.787 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 448 ms
+2019-12-05 15:22:09.915 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:22:09.932 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:22:10.134 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:22:10.508 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:10.509 [main] ERROR [org.apache.catalina.util.LifecycleBase:175] maincid - Failed to start component [Connector[HTTP/1.1-8061]]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:226) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:259) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:197) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.outputConditionEvaluationReport(SpringBootDependencyInjectionTestExecutionListener.java:54) ~[spring-boot-test-autoconfigure-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:47) ~[spring-boot-test-autoconfigure-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) ~[junit-rt.jar:?]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[?:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:433) ~[?:1.8.0_101]
+	at sun.nio.ch.Net.bind(Net.java:425) ~[?:1.8.0_101]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223) ~[?:1.8.0_101]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[?:1.8.0_101]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:236) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:210) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1103) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1189) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:568) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	... 38 more
+2019-12-05 15:22:10.510 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Pausing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:10.510 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Stopping service [Tomcat]
+2019-12-05 15:22:10.513 [main] INFO  [org.apache.catalina.util.LifecycleBase:173] maincid - The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-12-05 15:22:10.514 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Stopping ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:10.514 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Destroying ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:22:10.515 [main] INFO  [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener:142] maincid - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2019-12-05 15:22:10.515 [main] ERROR [org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter:42] maincid - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8061 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8061, or configure this application to listen on another port.
+
+2019-12-05 15:22:10.516 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] maincid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:22:10.516 [main] INFO  [com.zaxxer.hikari.HikariDataSource:350] maincid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:22:10.518 [main] INFO  [com.zaxxer.hikari.HikariDataSource:352] maincid - MYHikariCP - Shutdown completed.
+2019-12-05 15:22:10.519 [main] ERROR [org.springframework.test.context.TestContextManager:250] maincid - Caught exception while allowing TestExecutionListener [org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@344f4dea] to prepare test instance [com.example.AuthTests@599f1b7]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:118) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener.prepareTestInstance(SpringBootDependencyInjectionTestExecutionListener.java:44) ~[spring-boot-test-autoconfigure-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) ~[junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) ~[junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) ~[junit-rt.jar:?]
+Caused by: org.springframework.boot.web.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8061 failed to start
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.checkConnectorHasStarted(TomcatWebServer.java:232) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.checkThatConnectorsHaveStarted(TomcatWebServer.java:224) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:202) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:311) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:164) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:127) ~[spring-boot-test-2.1.4.RELEASE.jar:2.1.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117) ~[spring-test-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	... 25 more
+2019-12-05 15:23:11.186 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:23:11.198 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:23:11.199 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:23:11.656 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:23:11.792 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:23:11.813 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b6e2263, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e4bd84a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@648c94da, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a62b5bc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@53de625d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@535779e4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53fd0d10, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c0d9d86, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4ce1d6d0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@24111ef1]
+2019-12-05 15:23:12.908 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 420272 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:23:12.908 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:23:14.653 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:23:14.668 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:23:14.677 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:23:14.678 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:23:14.831 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:23:14.831 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 1896 ms
+2019-12-05 15:23:15.180 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:23:15.327 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:23:15.924 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:23:16.579 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:23:16.602 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:23:16.606 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 4.745 seconds (JVM running for 7.188)
+2019-12-05 15:23:17.373 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:23:17.374 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:23:17.378 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.
+2019-12-05 15:24:05.162 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:24:05.171 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:24:05.172 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:24:05.350 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:24:05.482 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:24:05.502 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@30b9eadd, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@497570fb, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@412c995d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3249a1ce, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4dd94a58, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2f4919b0, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@a8a8b75, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@75b21c3b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@72be135f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@155d1021, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4bd2f0dc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2e647e59]
+2019-12-05 15:24:05.979 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 302676 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:24:05.980 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:24:11.352 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:24:11.430 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:24:11.544 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:24:11.548 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:24:12.337 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:24:12.337 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 6332 ms
+2019-12-05 15:24:15.067 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:24:15.591 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:24:19.721 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:24:26.471 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:24:26.555 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:24:26.570 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 21.023 seconds (JVM running for 23.045)
+2019-12-05 15:25:53.360 [MYHikariCP housekeeper] WARN  [com.zaxxer.hikari.pool.HikariPool:766] MYHikariCP housekeepercid - MYHikariCP - Thread starvation or clock leap detected (housekeeper delta=1m5s382ms224µs830ns).
+2019-12-05 15:25:53.398 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:25:53.400 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:25:53.408 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.
+2019-12-05 15:25:59.631 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:25:59.644 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:25:59.646 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:25:59.810 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:25:59.973 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:25:59.996 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@127d7908, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6b9c69a9, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6622a690, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@30b9eadd, org.springframework.test.context.support.DirtiesContextTestExecutionListener@497570fb, org.springframework.test.context.transaction.TransactionalTestExecutionListener@412c995d, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3249a1ce, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@4dd94a58, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@2f4919b0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@a8a8b75, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@75b21c3b, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@72be135f]
+2019-12-05 15:26:00.494 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 429576 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:26:00.495 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:26:06.223 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:26:06.300 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:26:06.411 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:26:06.415 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:26:07.179 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:26:07.180 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 6651 ms
+2019-12-05 15:26:09.970 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:26:10.488 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:26:14.583 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:26:21.392 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:26:21.487 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:26:21.503 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 21.458 seconds (JVM running for 23.441)
+2019-12-05 15:26:37.930 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:26:37.935 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:26:37.946 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.
+2019-12-05 15:46:41.298 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:46:41.353 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:46:41.354 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:46:41.454 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:46:41.584 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:46:41.601 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4b6e2263, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5e4bd84a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@648c94da, org.springframework.test.context.transaction.TransactionalTestExecutionListener@2a62b5bc, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@53de625d, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@535779e4, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@53fd0d10, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@6c0d9d86, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@4ce1d6d0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@24111ef1]
+2019-12-05 15:46:42.095 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 417600 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:46:42.096 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:46:44.429 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:46:44.446 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:46:44.457 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:46:44.457 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:46:44.586 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:46:44.586 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 2472 ms
+2019-12-05 15:46:44.925 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:46:45.093 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:46:45.724 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:46:46.501 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:46:46.525 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:46:46.529 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 4.881 seconds (JVM running for 6.677)
+2019-12-05 15:46:46.921 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:46:46.924 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:46:46.929 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.
+2019-12-05 15:50:00.229 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:50:00.240 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:50:00.241 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:50:00.374 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:50:00.505 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:50:00.521 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5dcb4f5f, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@71812481, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@16ce702d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7b94089b, org.springframework.test.context.support.DirtiesContextTestExecutionListener@7ca20101, org.springframework.test.context.transaction.TransactionalTestExecutionListener@47f9738, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6155d082, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3a5ecce3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@561868a0, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2ea6e30c, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6138e79a, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@2dcd168a]
+2019-12-05 15:50:01.265 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 433144 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:50:01.266 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:50:02.942 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:50:02.959 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:50:02.971 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:50:02.971 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:50:03.112 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:50:03.112 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 1828 ms
+2019-12-05 15:50:03.438 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:50:03.569 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:50:04.144 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:50:04.861 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:50:04.884 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:50:04.888 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 4.315 seconds (JVM running for 6.236)
+2019-12-05 15:50:05.094 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:50:05.096 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:50:05.109 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.
+2019-12-05 15:51:20.364 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:51:20.382 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:51:20.382 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:51:20.496 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:51:20.756 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:51:20.771 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@16ce702d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b94089b, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@7ca20101, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@47f9738, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6155d082, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3a5ecce3, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@561868a0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@2ea6e30c, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@6138e79a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@2dcd168a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@388526fb, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@21a21c64]
+2019-12-05 15:51:21.641 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 413488 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:51:21.641 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:51:23.586 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:51:23.602 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:51:23.613 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:51:23.614 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:51:23.762 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:51:23.762 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 2029 ms
+2019-12-05 15:51:24.129 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:51:24.270 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:51:24.862 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:51:25.573 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:51:25.597 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:51:25.601 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 4.788 seconds (JVM running for 6.854)
+2019-12-05 15:51:26.067 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:51:26.069 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:51:26.076 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.
+2019-12-05 15:52:34.486 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:308] maincid - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.example.AuthTests], using SpringBootContextLoader
+2019-12-05 15:52:34.499 [main] INFO  [org.springframework.test.context.support.AbstractContextLoader:264] maincid - Could not detect default resource locations for test class [com.example.AuthTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2019-12-05 15:52:34.501 [main] INFO  [org.springframework.test.context.support.AnnotationConfigContextLoaderUtils:83] maincid - Could not detect default configuration classes for test class [com.example.AuthTests]: AuthTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2019-12-05 15:52:34.739 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:247] maincid - Found @SpringBootConfiguration com.example.HouseWebApplication for test class com.example.AuthTests
+2019-12-05 15:52:34.879 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:248] maincid - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2019-12-05 15:52:34.895 [main] INFO  [org.springframework.boot.test.context.SpringBootTestContextBootstrapper:177] maincid - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@6622a690, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@30b9eadd, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@497570fb, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@412c995d, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3249a1ce, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4dd94a58, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@2f4919b0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@a8a8b75, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@75b21c3b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@72be135f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@155d1021, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4bd2f0dc]
+2019-12-05 15:52:35.327 [background-preinit] INFO  [org.hibernate.validator.internal.util.Version:21] background-preinitcid - HV000001: Hibernate Validator 6.0.16.Final
+2019-12-05 15:52:35.518 [main] INFO  [com.example.AuthTests:50] maincid - Starting AuthTests on lxlpc with PID 404440 (started by Administrator in D:\xianlianggit\myhousev1\house-web)
+2019-12-05 15:52:35.519 [main] INFO  [com.example.AuthTests:675] maincid - No active profile set, falling back to default profiles: default
+2019-12-05 15:52:40.964 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:90] maincid - Tomcat initialized with port(s): 8061 (http)
+2019-12-05 15:52:41.042 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Initializing ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:52:41.156 [main] INFO  [org.apache.catalina.core.StandardService:173] maincid - Starting service [Tomcat]
+2019-12-05 15:52:41.160 [main] INFO  [org.apache.catalina.core.StandardEngine:173] maincid - Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-12-05 15:52:41.955 [main] INFO  [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]:173] maincid - Initializing Spring embedded WebApplicationContext
+2019-12-05 15:52:41.955 [main] INFO  [org.springframework.web.context.ContextLoader:296] maincid - Root WebApplicationContext: initialization completed in 6410 ms
+2019-12-05 15:52:44.713 [main] INFO  [com.zaxxer.hikari.HikariDataSource:110] maincid - MYHikariCP - Starting...
+2019-12-05 15:52:45.227 [main] INFO  [com.zaxxer.hikari.HikariDataSource:123] maincid - MYHikariCP - Start completed.
+2019-12-05 15:52:49.269 [main] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:171] maincid - Initializing ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:52:56.024 [main] INFO  [org.apache.coyote.http11.Http11NioProtocol:173] maincid - Starting ProtocolHandler ["http-nio-8061"]
+2019-12-05 15:52:56.111 [main] INFO  [org.springframework.boot.web.embedded.tomcat.TomcatWebServer:204] maincid - Tomcat started on port(s): 8061 (http) with context path ''
+2019-12-05 15:52:56.126 [main] INFO  [com.example.AuthTests:59] maincid - Started AuthTests in 21.176 seconds (JVM running for 23.198)
+2019-12-05 15:53:15.363 [Thread-4] INFO  [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor:208] Thread-4cid - Shutting down ExecutorService 'applicationTaskExecutor'
+2019-12-05 15:53:15.369 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:350] Thread-4cid - MYHikariCP - Shutdown initiated...
+2019-12-05 15:53:15.380 [Thread-4] INFO  [com.zaxxer.hikari.HikariDataSource:352] Thread-4cid - MYHikariCP - Shutdown completed.

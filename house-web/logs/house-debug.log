@@ -1,0 +1,15 @@
+2019-12-05 15:46:46.737  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - ==>  Preparing: UPDATE user SET email=?, phone=?, name=?, create_time=? WHERE id=? 
+2019-12-05 15:46:46.789  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - ==> Parameters: lxl@meirichexian.com(String), 15173435478(String), asss(String), 2019-12-05 15:46:46.684(Timestamp), 33(Long)
+2019-12-05 15:46:46.911  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - <==    Updates: 1
+2019-12-05 15:51:25.825  [main] DEBUG [com.example.mapper.UserMapper.update:] maincid - ==>  Preparing: UPDATE user SET email=?, phone=?, name=?, create_time=? WHERE email = ? 
+2019-12-05 15:51:25.856  [main] DEBUG [com.example.mapper.UserMapper.update:] maincid - ==> Parameters: lxl@meirichexian.com(String), 15173435478(String), asss(String), 2019-12-05 15:51:25.762(Timestamp), lxl@meirichexian.com(String)
+2019-12-05 15:51:26.001  [main] DEBUG [com.example.mapper.UserMapper.update:] maincid - <==    Updates: 1
+2019-12-05 15:51:26.003  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - ==>  Preparing: UPDATE user SET email=?, phone=?, name=?, create_time=? WHERE id=? 
+2019-12-05 15:51:26.007  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - ==> Parameters: lxl@meirichexian.com(String), 15173435478(String), asss(String), 2019-12-05 15:51:25.762(Timestamp), 33(Long)
+2019-12-05 15:51:26.045  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - <==    Updates: 1
+2019-12-05 15:53:03.923  [main] DEBUG [com.example.mapper.UserMapper.update:] maincid - ==>  Preparing: UPDATE user SET email=?, phone=?, name=?, create_time=? WHERE email = ? 
+2019-12-05 15:53:04.272  [main] DEBUG [com.example.mapper.UserMapper.update:] maincid - ==> Parameters: lxl@meirichexian.com(String), 15173435478(String), asss(String), 2019-12-05 15:52:57.126(Timestamp), lxl@meirichexian.com(String)
+2019-12-05 15:53:04.356  [main] DEBUG [com.example.mapper.UserMapper.update:] maincid - <==    Updates: 1
+2019-12-05 15:53:11.248  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - ==>  Preparing: UPDATE user SET email=?, phone=?, name=?, create_time=? WHERE id=? 
+2019-12-05 15:53:11.318  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - ==> Parameters: lxl@meirichexian.com(String), 15173435478(String), asss(String), 2019-12-05 15:52:57.126(Timestamp), 33(Long)
+2019-12-05 15:53:11.374  [main] DEBUG [com.example.mapper.UserMapper.updateById:] maincid - <==    Updates: 1
