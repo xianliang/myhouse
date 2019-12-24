@@ -57,6 +57,7 @@ public class HouseController {
         if(houseUser.getUserId() !=null && !houseUser.getUserId().equals(0)){
             modelMap.put("agent",agencyService.getAgentDetail(id));
         }
+        //ces
         List<House> rcHouses = recommendService.getHotHouse(CommonConstants.RECOM_SIZE);
         modelMap.put("recomHouses", rcHouses);
         modelMap.put("house",house);
