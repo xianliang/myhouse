@@ -3,6 +3,21 @@ server:
 
 
 spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: 02
+      auto-offset-reset: earliest
+      enable-auto-commit: false
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+    producer:
+      acks: 1
+      batch-size: 16384
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      retries: 1 #设置大于0，则失败重发
   freemarker:
     charset: utf-8
     content-type: text/html
@@ -16,7 +31,7 @@ spring:
       auto_import: common/common.ftl as common
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://127.0.0.1:3306/houses?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/house1?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
     password: pwd123

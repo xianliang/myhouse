@@ -68,7 +68,7 @@ public class MailService {
         sendMail("激活邮件",url,email);
     }
 
-    private void sendMail(String title,String url,String email){
+    public void sendMail(String title,String url,String email){
         SimpleMailMessage message = new SimpleMailMessage();
         message.setFrom(from);
         message.setSubject(title);

@@ -15,7 +15,7 @@ public class Comment {
     private String content;
     private Long houseId;
     private Date createTime;
-    private Long blogId;
+    private Integer blogId;
     private Integer type;
     private Long userId;
 

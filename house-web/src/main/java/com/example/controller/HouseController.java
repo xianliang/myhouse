@@ -63,4 +63,6 @@ public class HouseController {
         modelMap.put("commentList",comments);
         return "/house/detail";
     }
+
+
 }

@@ -6,9 +6,8 @@ import com.example.common.model.Agency;
 import com.example.common.model.House;
 import com.example.common.model.User;
 import com.example.common.page.PageData;
-import com.example.service.AgencyService;
-import com.example.service.RecommendService;
-import com.example.service.UserService;
+import com.example.common.result.ResultMsg;
+import com.example.service.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -28,6 +27,11 @@ public class AgencyController {
     UserService userService;
     @Autowired
     RecommendService recommendService;
+    @Autowired
+    HouseService houseService;
+
+    @Autowired
+    MailService mailService;
 
     @RequestMapping("/agency/agentList")
     public String agentList(Integer pageSize,Integer pageNum,ModelMap modelMap){
@@ -49,4 +53,38 @@ public class AgencyController {
         modelMap.put("agencyList",agencies);
         return "/user/agency/agencyList";
     }
+
+    @RequestMapping("agency/create")
+    public String agencyCreate(){
+        return "";
+    }
+
+    @RequestMapping("/agency/agentDetail")
+    public String agentDetail(Long id , ModelMap modelMap){
+        User user = agencyService.getAgentDetail(id);
+        List<House> houses = recommendService.getHotHouse();
+        House query = new House();
+        query.setUserId(id);
+        query.setBookmarked(false);
+        IPage<House> houseIPage = houseService.queryHouse(query,10,1);
+        if(houseIPage != null){
+            modelMap.put("bindHouses",houseIPage.getRecords());
+        }
+        modelMap.put("recomHouses", houses);
+        modelMap.put("agent", user);
+        modelMap.put("agencyName", user.getAgencyName());
+        return "user/agent/agentDetail";
+
+    }
+
+    @RequestMapping("agency/agentMsg")
+    public String agentMsg(Long id,String msg,String name,String email,ModelMap modelMap ){
+        User user = agencyService.getAgentDetail(id);
+        mailService.sendMail("","email:"+email+"msg:"+msg,user.getEmail());
+        return "redirect:agency/agentDetail?id="+id+"&"+ ResultMsg.successMsg("成功").asUrlParams();
+    }
+
+
+
+
 }
